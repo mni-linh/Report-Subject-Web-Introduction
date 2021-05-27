@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/20c7d8_4119fef7d5ba4edf8f09b32c704158bb%7Emv2_d_5297_5296_s_4_2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/20c7d8_4119fef7d5ba4edf8f09b32c704158bb%7Emv2_d_5297_5296_s_4_2.jpg">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>h a i a u c o r n e r</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="home" class="header">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <h1>HAI AU CORNER</h1>
+        </div>
+
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>HAI AU CORNER</h1>
+            </div>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <!-- HOME -->
+              <a href="#home" class="nav-link scroll-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <!-- Courses -->
+              <a href="#courses" class="nav-link scroll-link">KHÓA HỌC</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">TRANH VẼ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#paiting" class="nav-link">HỌA PHẨM</a>
+            </li>
+            <li class="nav-item">
+              <a href="#stories" class="nav-link scroll-link">CÂU CHUYỆN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link scroll-link">LIÊN HỆ</a>
+            </li>
+            <li class="nav-item cart_counter">
+              <a href="#" class="nav-link icon">
+                <i class="bx bx-shopping-bag"></i>
+                <span id="total_counter" style="font-weight: 700">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <i class="bx bx-shopping-bag"></i>
+        </a>
+        
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="cart">
+      <div class="cart_items">
+        <!-- <div class="cart_item">
+          <input type="hidden" name="" id="product_id">
+          <img src="./images/pic1.jpg" alt="" id="product_">
+          <h4 class="product_name">PIC 1</h4>
+          <a href="" class="btn_small" action="decrease">&minus;</a>
+          <h4 class="product_quantity">10</h4>
+          <a href="" class="btn_small" action="increase">&plus;</a>
+          <span class="product_price">$50</span>
+          <a href="" class="btn_small btn_remove" action="remove">&times;</a>
+        </div> -->
+        <div class="check_out">
+          
+          <h4>Total Amount: $</h4>
+          <h4 class="total_cost"></h4>
+            
+          <button class="check_out_btn" onclick="checkout()" > Pay </button>
+            
+            <!-- paypal -->
+            <!-- <div class="cart"></div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <img src="./images/banner.png" alt="" class="hero-img" />
+    <!-- <img src="./imgs/bannerr.png" alt="" class="hero-img" /> -->
+    <div class="hero-content">
+      <div id="comp-k088kuth" class="_2bafp discount" data-testid="richTextElement">
+        <h2 class="font_2" style="font-size:146px; line-height:1em; text-align:center">
+          <span style="font-family:marzo-w00-regular,fantasy;">
+            <span style="font-size:100px">
+              <span style="color:#000000">I'M</span>
+            </span>
+          </span>
+        </h2>
+        <h2 class="font_2" style="font-size:90px; line-height:0.5em; text-align:center">
+          <span style="font-family:marzo-w00-regular,fantasy">
+            <span style="font-size:95px">
+              <span style="color:#000000">HAI AU</span>
+            </span>
+          </span>
+        </h2>
+      </div>
+      <div class="intro">
+        <p class="font_8" style="font-size: 15px; line-height: 1.6em; text-align: right;">
+          <span style="font-family:futura-lt-w01-light,sans-serif">
+            <span style="font-size:15px">
+              <span style="color:#000000">
+                <span class="wixGuard">&ZeroWidthSpace;</span>
+              </span>
+            </span>
+          </span>
+        </p>
+        <p class="font_8" style="text-align:right;font-size:18px">Cách đây 7 năm, khi Hải Âu luyện màu nước, đã tìm được sự cân bằng tâm trí rất tốt trước mọi việc, cảm thấy giàu năng lượng và có nhiều tình yêu cuộc sống.</p>
+        <p class="font_8" style="text-align:right;font-size:18px">"Bây giờ, chúng ta đều lo toan và căng thẳng sau những giờ làm việc, thì việc giải tỏa lo lâu là việc vô cùng cần thiết. Nếu mọi người cũng tìm được sự yêu thích, và sự đam mê như mình ngày ấy, hay chỉ đơn giản là thật sự "đứng yên" trong vài giờ, vẽ những bức tranh đầu tiên với những cảm xúc đầu tiên thì thật ý nghĩa". Mình đã thật sự nghĩ như vậy.</p>
+        <p class="font_8" style="text-align:right;font-size:18px">Cuộc sống thì hữu hạn, nhưng niềm vui hay hạnh phúc là những điều vô hạn, bất kể thời điểm nào chúng ta cũng có thể tìm lại được, bằng tất cả những gì đã và đang diễn ra. </p>
+        <p class="font_8" style="text-align:right;font-size:18px">&nbsp;</p>
+      </div>
+      <!-- <a class="btn" href="#">shop now</a> -->
+      <div id="sectionn" class="demo explore">
+        <a href="#courses" class="nav-single-link nav_link" style="width: 400px; margin-right: 10px;">
+          <span></span>
+          <span></span>
+          <span></span>
+          Ghé xem góc của mình nhé!
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- courses -->
+  <section class="advert section" id="courses">
+    <div class="title">
+      <h1>KHÓA HỌC</h1>
+    </div>
+    <div class="advert-center container">
+
+      <div class="advert-box">
+        <div class="dotted">
+          <div class="content">
+            <p> Chân dung chì Cơ bản </p>
+            <h4>Tháng Năm vẽ cùng <span style="font-weight: 700; font-style: italic; color: red;"> Hải Mã</span></h4>
+          </div>
+        </div>
+        <img src="./images/about1.jpg" alt="">
+      </div>
+
+      <div class="advert-box">
+        <div class="dotted">
+          <div class="content">
+            <p> Màu Gouache cơ bản </p>
+            <h4>Tháng Năm vẽ cùng <span style="font-weight: 700; font-style: italic; color: red;"> Cua Mỡ</span></h4>
+          </div>
+        </div>
+        <img src="./images/about2.jpg" alt="">
+      </div>
+
+      <div class="advert-box">
+        <div class="dotted">
+          <div class="content">
+            <p style="padding-left: 60px; padding-right: 60px;"> Ký họa cơ bản </p>
+            <h4>Tháng Năm vẽ cùng <span style="font-weight: 700; font-style: italic; color: red;"> San Hô</span></h4>
+          </div>
+        </div>
+        <img src="./images/about3.jpg" alt="">
+      </div>
+      
+    </div>
+  </section>
+  <!-- Main -->
+  <main>
+    <!-- Featured -->
+    <section class="section featured" id="gallery">
+      <div class="title" >
+        <h1>TRANH VẼ</h1>
+      </div>
+      
+      <!-- <form action="" id="input_filter">
+        <input type="text" placeholder="filter item ..." id="search-item" autocomplete="off">
+        <span class="search_product">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </span>
+      </form> -->
+
+      <div class="products" id="filter_button">
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="1">
+          <img src="./images/pic1.jpg" alt="" id="image" class="pictures">
+          <div class="infor">
+            <h4 class="product__name btnn"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 1</h4>
+            <h5 class="product__price"> &nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="2">
+          <img src="./images/pic2.jpg" alt="" id="image" class="pictures">
+          <div class="infor">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 2</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+            <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="3">
+          <img src="./images/pic3.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 3</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+            <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="4">
+          <img src="./images/pic4.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 4</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="5">
+          <img src="./images/pic5.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 5</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="6">
+          <img src="./images/pic6.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 6</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="7">
+          <img src="./images/pic7.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 7</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="8">
+          <img src="./images/pic8.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 8</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="9">
+          <img src="./images/pic9.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPIC 9</h4>
+            <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="10">
+          <img src="./images/pic10.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbspPIC 10</h4>
+            <h5 class="product__price">&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="11">
+          <img src="./images/pic11.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbspPIC 11</h4>
+            <h5 class="product__price">&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="12">
+          <img src="./images/pic12.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbspPIC 12</h4>
+            <h5 class="product__price">&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="13">
+          <img src="./images/pic13.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbspPIC 13</h4>
+            <h5 class="product__price">&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="14">
+          <img src="./images/pic14.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbspPIC 14</h4>
+            <h5 class="product__price">&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="15">
+          <img src="./images/pic15.jpg" alt="" id="image" class="pictures">
+          <div class="info">
+            <h4 class="product__name btnn">&nbsp&nbsp&nbspPIC 15</h4>
+            <h5 class="product__price">&nbsp&nbsp$50</h5>
+          </div>
+          <div class="btn__add__to__cart" style="padding-left: 140px; padding-right: 100px;">Add To Cart</div>
+        </div>
+        <!-- <h1 id="showtext"></h1> -->
+      </div>
+    </section>
+
+    <!--Latest -->
+    <section class="section featured" id="paiting">
+      <div class="title">
+        <h1>HỌA PHẨM</h1>
+      </div>
+      <div class="products">    
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="16">
+          <img src="./images/paint1.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCELESTIAL</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp$37</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="17">
+          <img src="./images/paint2.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPASTEL DREAMS</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp$37</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="18">
+          <img src="./images/paint3.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSHIMMERING LIGHTS</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp&nbsp$37</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="19">
+          <img src="./images/paint4.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspODYSSEY</h4>
+          <h5 class="product__price">&nbsp&nbsp$37</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="20">
+          <img src="./images/paint5.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPASTEL CLASSICS</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp$37</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="21">
+          <img src="./images/paint6.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDECADENT PIES</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp$37</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="22">
+          <img src="./images/paint7.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSAUNDERS WATERFORD</h4>
+          <h5 class="product__price">&nbsp&nbsp$12</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="23">
+          <img src="./images/paint8.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPorcelain Palette</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp$9</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product_id" value="24">
+          <img src="./images/paint9.jpg" alt="" id="image" class="pictures">
+          <h4 class="product__name _color">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEscoda Reserva</h4>
+          <h5 class="product__price">&nbsp&nbsp&nbsp$11</h5>
+          <div class="btn__add__to__cart" style="padding-left: 119px; padding-right: 100px;">&nbsp&nbsp&nbsp Add To Cart</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Banner -->
+    <section class="section" id="stories">
+      <div class="title">
+        <h1>CÂU CHUYỆN</h1>
+      </div>
+      <div class="product-banner">
+        <div class="left">
+          <img src="./images/background.png" alt="" />
+        </div>
+        <div class="right">
+          <div class="content">
+            <p style="font-family:'Charm', cursive; font-size: 27px; font-style: italic;">
+              " Vào những ngày cách ly như thế này, được xem tranh của các bạn cảm thấy nhẹ nhàng biết bao " . Mình đã dừng lại rất lâu ở comment đó. Hoá ra, tranh của tụi mình vẽ có thể xoa dịu tâm hồn ...
+              <br>
+              Đó là lý do khi đăng tranh vẽ tụi mình luôn kèm theo caption là lời bài hát mình đang nghe và một sticker trái tim. Mình muốn gửi đến cho các bạn nhiều hơn là một bức tranh ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="testimonial-center container">
+        <div class="testimonial">
+          <span>&ldquo;</span>
+          <p style="font-style: italic;">
+            Theo cá nhân mình, giá trị mà nghệ thuật mang lại là sự thoải mái, thỏa mãn và hài lòng... 
+            chưa cần biết bức tranh có sức hút và mãn nhãn người xem như thế nào... 
+            chỉ cần người sáng tác cảm nhận được vẻ đẹp mà họ tạo ra... 
+            thì khi ấy, nghệ thuật đã làm tròn sứ mệnh của họ...
+          </p>
+          <div class="img-cover">
+            <img src="./images/cmt1.jpg" alt="" />
+          </div>
+          <h4>Ha Phan</h4>
+        </div>
+        <div class="testimonial">
+          <span>&ldquo;</span>
+          <p style="font-style: italic;">
+            Sau này, khoảng thời gian vẽ chúng mình có cơ hội gặp gỡ nhiều chị, nhiều bạn hơn. 
+            Mình phát hiện ra rằng mỗi chúng ta, ai cũng có những góc khuất, những áp lực, những nỗi niềm, những vết thương ... sâu trong tâm hồn. 
+            Và đa số tìm đến vẽ để thư giãn hoặc chữa lành ...
+            Cảm ơn mọi người rất nhiều.
+          </p>
+          <div class="img-cover">
+            <img src="./images/cmt2.jpg" alt="" />
+          </div>
+          <h4>Nguyen Trang</h4>
+        </div>
+        <div class="testimonial">
+          <span>&ldquo;</span>
+          <p style="font-style: italic;">
+            Cảm ơn buổi học vè trải nghiệm pha màu hôm nay, 
+            mình đã thật sự trải qua 3h đồng hồ nhẹ nhàng chỉ với cọ và màu nước. 
+            Nếu có cơ hội, mọi người cũng nên thử trải nghiệm giống mình nhé... 
+            cảm giác giống như là não nghỉ ngơi, tách suy nghĩ ra mọi vướng bận thường nhật.❤
+          </p>
+          <div class="img-cover">
+            <img src="./images/cmt3.jpg" alt="" />
+          </div>
+          <h4>Hien Tran</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <div class="title" id="contact">
+    <h1>LIÊN HỆ</h1>
+  </div>
+  <footer id="footer" class="section footer">
+      <div class="footer-container">
+        <div class="footer-center contact-left">
+          <div style="color:#243a6f;">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            01, Gio-an, Suoi Nghe, Chau Duc, BR-VT
+          </div>
+          <div style="color:#243a6f;">
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            +84 353 544 089
+          </div>
+          <div style="color:#243a6f;">
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            thankgod.peacesky@gmail.com
+          </div>
+          <div style="color:#243a6f;">
+            <span>
+              <i class="far fa-clock"></i>
+            </span>
+            Mon - Sun 8:00 AM to 9:00 PM
+          </div>
+          <br>
+          <div style="display:flex; color: #243a6f;">
+            <span>
+              <a href="https://www.facebook.com/mni.linh28/" style="margin-right:10px; color: #243a6f;"><i class="fab fa-facebook-f"></i></a>
+            </span>
+            <span>
+              <a href="https://twitter.com/mni_linh" style="margin-right:10px; color: #243a6f;"><i class="fab fa-twitter"></i></a>
+            </span>
+            <span>
+              <a href="https://www.linkedin.com/in/tr%E1%BA%A7n-th%E1%BB%8B-t%E1%BB%A9-linh-a8a9041a5/" style="margin-right:10px; color: #243a6f;"><i class="fab fa-linkedin-in"></i></a>
+            </span>
+            <span>
+              <a href="https://www.pinterest.com/mni_linh" style="margin-right:10px; color: #243a6f;"><i class="fab fa-pinterest-p"></i></a>
+            </span> 
+            <span>
+              <a href="https://www.instagram.com/mni_linh/" style="margin-right:10px; color: #243a6f;"><i class="fab fa-instagram"></i></a>
+            </span>
+          </div>
+          <br>
+          <div class="map">
+            <!-- background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+  transform: translateY(-1rem); -->
+            <iframe style="transform: translateY(-1rem); z-index: 1; transition: all 500ms ease-in-out; box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25); background-color: rgba(0, 0, 0, 0.5); height: 300px;" class=" contact-map " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.587079300497!2d107.2057168141151!3d10.593070165449516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175095a05fe2699%3A0x3ec68e7c409a0318!2zTmjDoCBNYXkgxJDhu6ljIFTDoGk!5e1!3m2!1sen!2sus!4v1617195572532!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+        <!-- Form contact -->
+        <div class="footer-center contact-right">
+          <div class="contact-form">
+            <h2 style="font-size: 40px; margin-bottom: 10px; color: #243a6f;">Contact Us</h2>
+            <form action="/action_page.php">
+              <input type="text" class="name underline" value placeholder="Name"><br>
+              <input type="email" class="email underline" value placeholder="Email">
+              <input type="tel" class="phone underline" value placeholder="Phone" pattern="[0-9]{4}[0-9]{3}[0-9]{3}"><br>
+              <input type="text" class="message underline" value placeholder="Type your message here..." style="padding: 0 0 80px 0;">
+              <br>
+              <a href="#"><input type="submit" class="submit nounderline" value="Send" style="padding-left: 200px; font-family: 'Courgette', cursive; font-size: 30px; color:#243a6f; cursor: pointer;"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div> 
+  </footer>
+  <!-- End Footer -->
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
